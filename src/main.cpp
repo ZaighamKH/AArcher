@@ -1,7 +1,8 @@
-#include "ElfFile.h"
+//AARCH4/ARM64 ELF disassambler "AArcher"
+//Written by: Muhammad Zaigham Khan
+//Created for self-learning purposes
 
-//#include <iostream>
-//#include <cstring>
+#include "ElfFile.h"
 
 int main(int argc, char* argv[]) {
 
@@ -14,6 +15,7 @@ int main(int argc, char* argv[]) {
 
     elfFile.displayElfHeader();
     elfFile.displayProgramHeaders();
+    elfFile.displaySectionHeaders();
 
     return 0;
 }
